@@ -6,7 +6,7 @@ app = FastAPI()
 
 @app.get("/users")
 async def users():
-    return {
+    return [
         {
             "name": "Bautista",
             "apellido": "Mendibe",
@@ -22,4 +22,4 @@ async def users():
             "apellido": "Mendibe",
             "mail": "bautistamendibe@gmail.com"
         }   
-    }
+    ]
